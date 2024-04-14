@@ -18,7 +18,7 @@ start = start_factory(options.settings)
 start.create()
 
 
-@app.route("/api/report/<storage_key>", methods = ["GET"])
+@app.route("/api/report/<storage_key>", methods=["GET"])
 def get_report(storage_key: str):
     """
         Сформировать отчет
